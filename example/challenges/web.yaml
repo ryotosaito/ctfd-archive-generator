@@ -1,0 +1,25 @@
+challenges:
+  - name: "Dynamic challenge"
+    tags: ["sample", "demo"]
+    description: |
+      A dynamic scoring challenge.
+      <img src="{dog}" width="380" />
+    flag: "CTF{sample_flag}"
+    connection_info: "http://www.example.com"
+    attachments:
+      - source: files/web/attachment.txt
+    hints:
+      - content: |
+          sample hint
+          * list content 1
+          * list content 2
+          
+          <img src="{cat}" width="380" />
+        cost: 0
+      - content: "another hint"
+        cost: 30
+files:
+- name: dog
+  source: files/web/doge.jpg
+- name: cat
+  source: files/web/cat.jpeg

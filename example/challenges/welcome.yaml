@@ -1,0 +1,7 @@
+challenges:
+  - name: Welcome
+    description: |
+      The flag is below
+      > CTF{{Welcome}}
+    type: standard
+    flag: "CTF{Welcome}"
