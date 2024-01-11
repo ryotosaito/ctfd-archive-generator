@@ -20,3 +20,12 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/ryotosaito/ctfd_archive_generator"
 "Bug Tracker" = "https://github.com/ryotosaito/ctfd_archive_generator/issues"
+
+[project.scripts]
+ctfarchive = "index:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+static = ["*.json"]
