@@ -13,7 +13,7 @@ try:
 except ImportError:
     from yaml import Loader
 
-from pkgroot import PACKAGE_ROOT
+from ctfarchive.pkgroot import PACKAGE_ROOT
 
 def main():
     challenges = []

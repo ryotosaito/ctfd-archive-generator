@@ -16,16 +16,20 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "pyyaml",
+    "passlib",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/ryotosaito/ctfd_archive_generator"
 "Bug Tracker" = "https://github.com/ryotosaito/ctfd_archive_generator/issues"
 
 [project.scripts]
-ctfarchive = "index:main"
+ctfarchive = "ctfarchive:main"
+
+[tool.setuptools.package-data]
+"ctfarchive.static" = ["*.json"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.setuptools.package-data]
-static = ["*.json"]
